@@ -22,6 +22,23 @@ class APPDEVPH_Dashboard_Widgets_Setting {
             'appdevph-dashboard-widget-settings',
             array( $this, 'dashboard_widgets_settings_page') 
          );
+
+         add_submenu_page(
+            'appdevph-dashboard-widget-settings',
+            __("Dashboard Widgets"), 
+            __("Widgets"), 
+            'manage_options',
+            'appdevph-dashboard-widget-settings',
+        );
+
+        add_submenu_page(
+            'appdevph-dashboard-widget-settings',
+            'Show/Hide Widget', 
+            'Show/Hide Widget', 
+            'manage_options',
+            'appdevph-dashboard-widget-enable-disable',
+            array( $this, 'dashboard_widgets_show_hide_page' )
+        );
     }
 
 
@@ -42,6 +59,12 @@ class APPDEVPH_Dashboard_Widgets_Setting {
         <?php
     }
 
+
+    function dashboard_widgets_show_hide_page(){
+        ?>
+        <h1>Show/Hide Dashboard Widgets</h1>
+        <?php
+    }
 
     /**
      * Register and add settings
