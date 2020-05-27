@@ -36,7 +36,7 @@ class APPDEVPH_Dashboard_Widgets {
                     $key, 
                     $value["widget_name"], 
                     function() use ($value){
-                        echo apply_filters("adevph_widget_content", wpautop($value["widget_content"]));
+                        echo apply_filters("adevph_widget_content", $value["widget_content"]);
                     }
                 );
             endforeach;
@@ -44,11 +44,12 @@ class APPDEVPH_Dashboard_Widgets {
     }
 
     function render_dashboard_content($content){
-        return  html_entity_decode($content) ;
+        return html_entity_decode($content) ;
     }
 
 }
 
+require_once("classes/class.shortcodes.php");
 require_once("classes/class.settings.php");
 
 new APPDEVPH_Dashboard_Widgets();
