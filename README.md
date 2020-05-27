@@ -7,6 +7,10 @@ A plugin to create unlimited custom wordpress dashboard widgets easily
 * Display shortcode outputs
 * Usually anything...
 
+## Screenshots
+![Dashboard](https://raw.github.com/allan-empalmado/appdevph-dashboard-widgets/master/screenshots/dashboard.png)
+![Widget Setting](https://raw.github.com/allan-empalmado/appdevph-dashboard-widgets/master/screenshots/widgets.png)
+
 ### Other Info
 * Contributors: [Allan Empalmado](https://github.com/allan-empalmado)
 * Requires at least: Wordpress 4.6
