@@ -2,12 +2,12 @@
 /**
  * Plugin Name:       AppDevPH Dashboard Widgets
  * Plugin URI:        https://github.com/allan-empalmado/appdevph-dashboard-widgets
- * Description:       Create custom dashboard widgets. Enable/Disable dashboard widgets
+ * Description:       Create unlimited wordpress custom dashboard widgets. Enable/Disable dashboard widgets
  * Author:            Allan Ramirez Empalmado
  * Version:           1.0.0
  * Author URI:        https://appdevph.com
  * GitHub Plugin URI: https://github.com/allan-empalmado/appdevph-dashboard-widgets
- * License:           GNU General Public License v2
+ * License:           MIT
  */
 
 if ( ! defined( 'WPINC' ) ) {
