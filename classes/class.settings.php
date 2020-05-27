@@ -3,9 +3,9 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-if( ! class_exists("ADEVPH_Dashboard_Widgets_Setting") ):
+if( ! class_exists("APPDEVPH_Dashboard_Widgets_Setting") ):
 
-class ADEVPH_Dashboard_Widgets_Setting {
+class APPDEVPH_Dashboard_Widgets_Setting {
     
     private $options;
 
@@ -110,5 +110,5 @@ class ADEVPH_Dashboard_Widgets_Setting {
 
 }
 
-new ADEVPH_Dashboard_Widgets_Setting();
+new APPDEVPH_Dashboard_Widgets_Setting();
 endif;
