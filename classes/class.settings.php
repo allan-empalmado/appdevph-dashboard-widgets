@@ -16,8 +16,8 @@ class APPDEVPH_Dashboard_Widgets_Setting {
 
     function dashboard_widget_menu(){
         add_menu_page(
+            __("AppDevPH Dashboard Widgets"), 
             __("Dashboard Widgets"), 
-            'Settings', 
             'manage_options',
             'appdevph-dashboard-widget-settings',
             array( $this, 'dashboard_widgets_settings_page') 
@@ -30,6 +30,7 @@ class APPDEVPH_Dashboard_Widgets_Setting {
         ?>
         <div class="wrap">
             <h1><?php echo __("AppDevPH Dashboard Widgets"); ?></h1>
+            <?php settings_errors(); ?>
             <form method="post" action="options.php">
             <?php
                 settings_fields( 'appdevph_dashboard_widgets_group' );
