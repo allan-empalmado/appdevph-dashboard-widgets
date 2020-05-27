@@ -101,7 +101,7 @@ class APPDEVPH_Dashboard_Widgets_Setting {
 
 
             if(isset($input[$key]["widget_content"]) && !empty($input[$key]["widget_name"]))
-                $new_input[$key]["widget_content"] =  sanitize_text_field( $input[$key]['widget_content'] );
+                $new_input[$key]["widget_content"] =  htmlentities( html_entity_decode( $input[$key]['widget_content'] ));
 
         }
 
