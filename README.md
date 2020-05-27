@@ -2,9 +2,9 @@
 A plugin to create unlimited custom wordpress dashboard widgets easily
 
 
-## What you can do with the custom widgets?
-* Display/Embed html contents (ex: youtube embed code)
-* Display shortcode's output
+## Use of custom dashboard widgets
+* Display/Embed html contents (ex: youtube/vimeo embed code)
+* Display shortcode outputs
 * Usually anything...
 
 ### Other Info
