@@ -2,14 +2,16 @@
 A plugin to create unlimited custom wordpress dashboard widgets easily
 
 
-## Use of custom dashboard widgets
-* Display/Embed html contents (ex: youtube/vimeo embed code)
-* Display shortcode outputs
-* Usually anything...
+## Features
+* Display/Embed html contents (ex: youtube/vimeo embed code, games etc)
+* Use any shortcodes in dash widgets
+* Use dash widget shortcodes to display the widget in front-end pages
+* Assign which role to display the widget
 
 ## Screenshots
 ![Dashboard](https://raw.github.com/allan-empalmado/appdevph-dashboard-widgets/master/screenshots/dashboard.png)
 ![Widget Setting](https://raw.github.com/allan-empalmado/appdevph-dashboard-widgets/master/screenshots/widgets.png)
+![Edit Widget](https://raw.github.com/allan-empalmado/appdevph-dashboard-widgets/master/screenshots/edit-dashwidget.png)
 
 ### Other Info
 * Contributors: [Allan Empalmado](https://github.com/allan-empalmado)
@@ -17,6 +19,4 @@ A plugin to create unlimited custom wordpress dashboard widgets easily
 * License: [MIT](https://github.com/allan-empalmado/appdevph-dashboard-widgets/blob/master/LICENSE)
 
 ### TODOS
-* More dashboard options
-* Select specific user role to display the widget
-* Organize widget options page, preferrably display in a wp list table
+* Hide WP Default Dashboard widgets
