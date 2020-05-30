@@ -1,15 +1,18 @@
 <?php
+namespace ADEVPH\DashWidget\Classes;
+
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-if( ! class_exists("APPDEVPH_Dashboard_Widgets_Shortcode") ):
+if( ! class_exists("Shortcode") ):
 
-class APPDEVPH_Dashboard_Widgets_Shortcode {
+class Shortcode {
     
     public function __construct(){
         add_shortcode("widget_sc_post", array ( $this, "render_post_shortcode" ) );
     }
+
 
     function render_post_shortcode($atts){
         $atts = shortcode_atts( array(
@@ -28,8 +31,9 @@ class APPDEVPH_Dashboard_Widgets_Shortcode {
         );
 
         $posts = get_posts($args);
+        $output = "";
         if(!empty($posts)):
-            echo "<table class='widefat'><tbody>";
+            $output .= "<table class='widefat'><tbody>";
             foreach($posts as $post):
 
                 $fields = explode("|",$atts["fields"]);
@@ -41,20 +45,22 @@ class APPDEVPH_Dashboard_Widgets_Shortcode {
                         endif;
                     endforeach;
                     $tds .= sprintf("<td><a href='%s' target='_blank'>%s</a></td>", get_permalink($post->ID), __("View"));
-                    echo "<tr>{$tds}</tr>";
+                    $output .= "<tr>{$tds}</tr>";
                 //empty field provided we'll use the default ID|post_title|post_date
                 else:
                     $link = sprintf("<a href='%s' target='_blank'>%s</a>", get_permalink($post->ID), __("View"));
-                    printf("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>", $post->ID, $post->post_title, $post->post_date, $link);
+                    $output .= sprintf("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>", $post->ID, $post->post_title, $post->post_date, $link);
                 endif;
             endforeach;
-            echo "</tbody></table>";
+            $output .= "</tbody></table>";
         else:
-            printf("<p>%s</p>", __("No items to display..."));
+           $output .= sprintf("<p>%s</p>", __("No items to display..."));
         endif;
+
+        return $output;
     }
 
 } 
 
-new APPDEVPH_Dashboard_Widgets_Shortcode();
+new Shortcode();
 endif;
