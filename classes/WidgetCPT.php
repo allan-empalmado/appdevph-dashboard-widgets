@@ -11,6 +11,8 @@ class Widget_CPT {
 
     public function __construct(){
         add_action( 'init', array( $this, 'create_dash_widget_cpt' ), 0 );
+        add_filter( 'manage_dash_widget_posts_columns', array( $this, 'set_dash_widget_cpt_columns' ) );
+        add_action( 'manage_dash_widget_posts_custom_column' , array( $this, 'dash_widget_cpt_custom_columns'), 10, 2 );
     }
 
     function create_dash_widget_cpt(){
@@ -43,9 +45,35 @@ class Widget_CPT {
                 'exclude_from_search'   => false,
                 'publicly_queryable'    => false,
                 'show_in_nav_menus'     => false,
-                'show_in_admin_bar'     => true
+                'show_in_admin_bar'     => true,
+                'menu_icon'             => 'dashicons-layout'
             )
         );
+    }
+
+
+
+    function set_dash_widget_cpt_columns($columns) {
+        $new = array();
+        foreach($columns as $key => $title) {
+          if ($key=='date') {
+            $new['shortcode'] = 'Shortcode';
+          }
+          $new[$key] = $title;
+        }
+        return $new;
+    }
+
+    function dash_widget_cpt_custom_columns( $column, $post_id ) {
+        $post = get_post($post_id);
+        
+        if(!$post) { return; }
+
+        switch ( $column ) {
+            case 'shortcode' :
+                echo "<code>[dash_widget name='{$post->post_name}']</code>";
+            break;
+        }
     }
 }
 
