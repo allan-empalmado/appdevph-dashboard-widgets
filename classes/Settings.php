@@ -31,6 +31,10 @@ class Settings {
     function dash_widget_settings_page(){
         $this->options = get_option( 'adp_dash_widgets' );
         var_dump($this->options);
+        
+        global $wp_meta_boxes;
+        var_dump($wp_meta_boxes);
+
     }
 
 

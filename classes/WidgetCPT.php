@@ -43,7 +43,7 @@ class Widget_CPT {
                 'exclude_from_search'   => false,
                 'publicly_queryable'    => false,
                 'show_in_nav_menus'     => false,
-                'show_in_admin_bar'     => true     
+                'show_in_admin_bar'     => true
             )
         );
     }

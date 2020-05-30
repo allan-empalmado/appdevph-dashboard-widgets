@@ -25,6 +25,7 @@ class Dash_Widget {
 
 require_once("classes/WidgetCPT.php");
 require_once("classes/WidgetRender.php");
+require_once("classes/Metabox.php");
 require_once("classes/Shortcode.php");
 require_once("classes/Settings.php");
 
