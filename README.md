@@ -8,6 +8,9 @@ A plugin to create unlimited custom wordpress dashboard widgets easily
 * Use dash widget shortcodes to display the widget in front-end pages
 * Assign which role to display the widget
 
+## Feature Request
+* Email me at allan.fullstack@gmail.com
+
 ## Screenshots
 ![Dashboard](https://raw.github.com/allan-empalmado/appdevph-dashboard-widgets/master/screenshots/dashboard.png)
 ![Widget Setting](https://raw.github.com/allan-empalmado/appdevph-dashboard-widgets/master/screenshots/widgets.png)
