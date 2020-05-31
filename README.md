@@ -13,13 +13,11 @@ A plugin to create unlimited custom wordpress dashboard widgets easily
 
 ## Screenshots
 ![Dashboard](https://raw.github.com/allan-empalmado/appdevph-dashboard-widgets/master/screenshots/dashboard.png)
-![Widget Setting](https://raw.github.com/allan-empalmado/appdevph-dashboard-widgets/master/screenshots/widgets.png)
+![Widgets](https://raw.github.com/allan-empalmado/appdevph-dashboard-widgets/master/screenshots/widgets.png)
 ![Edit Widget](https://raw.github.com/allan-empalmado/appdevph-dashboard-widgets/master/screenshots/edit-dashwidget.png)
+![Setting](https://raw.github.com/allan-empalmado/appdevph-dashboard-widgets/master/screenshots/settings.png)
 
 ### Other Info
 * Contributors: [Allan Empalmado](https://github.com/allan-empalmado)
 * Requires at least: Wordpress 4.6
 * License: [MIT](https://github.com/allan-empalmado/appdevph-dashboard-widgets/blob/master/LICENSE)
-
-### TODOS
-* Hide WP Default Dashboard widgets

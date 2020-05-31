@@ -20,6 +20,9 @@ if( ! class_exists("Dash_Widget") ):
 
 class Dash_Widget {
 
+	public function __construct(){
+		
+	}
   
 }
 
