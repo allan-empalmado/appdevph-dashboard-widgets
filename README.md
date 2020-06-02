@@ -8,6 +8,15 @@ A plugin to create unlimited custom wordpress dashboard widgets easily
 * Use dash widget shortcodes to display the widget in front-end pages
 * Assign which role to display the dashboard widget
 
+## Installation
+* Click Clone or Download on this repo
+* Choose download as zip
+* Login to your Wordpress website
+* Click Plugins -> Add New -> Upload Plugin
+* Choose the file you previously downloaded
+* Activate and Enjoy!
+
+
 ## Feature Request
 * Email me at allan.fullstack@gmail.com
 
